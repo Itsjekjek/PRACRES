@@ -1,0 +1,16 @@
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+}
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+.char.correct   { color: #3fb950; }
+.char.incorrect { color: #f85149; text-decoration: underline wavy #f85149; }
+.char.current   { background: #264d80; }
+.pro-mode .char.current { background: transparent; }
+.expert-mode { font-size: 1.1rem; line-height: 1.6; }
